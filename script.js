@@ -31,6 +31,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 100) {
+<<<<<<< HEAD
         navbar.style.background = 'rgba(10, 10, 10, 0.98)';
         navbar.style.boxShadow = '0 4px 20px rgba(0, 212, 255, 0.2)';
         navbar.style.borderBottom = '1px solid rgba(0, 212, 255, 0.3)';
@@ -38,6 +39,13 @@ window.addEventListener('scroll', () => {
         navbar.style.background = 'rgba(10, 10, 10, 0.95)';
         navbar.style.boxShadow = '0 4px 20px rgba(0, 212, 255, 0.1)';
         navbar.style.borderBottom = '1px solid rgba(0, 212, 255, 0.2)';
+=======
+        navbar.style.background = 'rgba(17, 24, 39, 0.98)';
+        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.3)';
+    } else {
+        navbar.style.background = 'rgba(17, 24, 39, 0.95)';
+        navbar.style.boxShadow = 'none';
+>>>>>>> 73452a822f03b2613077276e63b3ca8c3a95b279
     }
 });
 
@@ -58,11 +66,14 @@ window.addEventListener('scroll', () => {
         link.classList.remove('active');
         if (link.getAttribute('href') === `#${current}`) {
             link.classList.add('active');
+<<<<<<< HEAD
             link.style.color = '#00d4ff';
             link.style.textShadow = '0 0 15px rgba(0, 212, 255, 0.8)';
         } else {
             link.style.color = '#f8fafc';
             link.style.textShadow = 'none';
+=======
+>>>>>>> 73452a822f03b2613077276e63b3ca8c3a95b279
         }
     });
 });
@@ -291,18 +302,29 @@ function createScrollToTopButton() {
         right: 30px;
         width: 50px;
         height: 50px;
+<<<<<<< HEAD
         background: linear-gradient(135deg, #00d4ff 0%, #8b5cf6 100%);
+=======
+        background: #2563eb;
+>>>>>>> 73452a822f03b2613077276e63b3ca8c3a95b279
         color: white;
         border: none;
         border-radius: 50%;
         cursor: pointer;
         font-size: 1.2rem;
+<<<<<<< HEAD
         box-shadow: 0 4px 20px rgba(0, 212, 255, 0.4);
+=======
+        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+>>>>>>> 73452a822f03b2613077276e63b3ca8c3a95b279
         transition: all 0.3s ease;
         opacity: 0;
         visibility: hidden;
         z-index: 1000;
+<<<<<<< HEAD
         backdrop-filter: blur(10px);
+=======
+>>>>>>> 73452a822f03b2613077276e63b3ca8c3a95b279
     `;
 
     document.body.appendChild(scrollBtn);
@@ -329,14 +351,22 @@ function createScrollToTopButton() {
     // Hover effects
     scrollBtn.addEventListener('mouseenter', () => {
         scrollBtn.style.transform = 'scale(1.1)';
+<<<<<<< HEAD
         scrollBtn.style.background = 'linear-gradient(135deg, #00b8e6 0%, #7c3aed 100%)';
         scrollBtn.style.boxShadow = '0 8px 30px rgba(0, 212, 255, 0.6)';
+=======
+        scrollBtn.style.background = '#1d4ed8';
+>>>>>>> 73452a822f03b2613077276e63b3ca8c3a95b279
     });
 
     scrollBtn.addEventListener('mouseleave', () => {
         scrollBtn.style.transform = 'scale(1)';
+<<<<<<< HEAD
         scrollBtn.style.background = 'linear-gradient(135deg, #00d4ff 0%, #8b5cf6 100%)';
         scrollBtn.style.boxShadow = '0 4px 20px rgba(0, 212, 255, 0.4)';
+=======
+        scrollBtn.style.background = '#2563eb';
+>>>>>>> 73452a822f03b2613077276e63b3ca8c3a95b279
     });
 }
 
@@ -361,13 +391,20 @@ style.textContent = `
     }
 
     .nav-link.active {
+<<<<<<< HEAD
         color: #00d4ff;
         text-shadow: 0 0 15px rgba(0, 212, 255, 0.8);
+=======
+        color: #2563eb;
+>>>>>>> 73452a822f03b2613077276e63b3ca8c3a95b279
     }
 
     .nav-link.active::after {
         width: 100%;
+<<<<<<< HEAD
         box-shadow: 0 0 15px rgba(0, 212, 255, 0.8);
+=======
+>>>>>>> 73452a822f03b2613077276e63b3ca8c3a95b279
     }
 `;
 document.head.appendChild(style);
