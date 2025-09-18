@@ -373,6 +373,18 @@ function createScrollToTopButton() {
 // Initialize scroll to top button
 document.addEventListener('DOMContentLoaded', createScrollToTopButton);
 
+// Resume download functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const resumeLinks = document.querySelectorAll('a[href*="resume"]');
+
+    resumeLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            showNotification('Resume download will be available soon. Please contact me directly for a copy.', 'info');
+        });
+    });
+});
+
 // Loading animation
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
